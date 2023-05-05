@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+/*ContenidoMeHome-------------------------------------------------------------------------------------------------------*/
 .contenedor-typing-todo {
   display: flex;
   min-height: calc(100vh - 96px);
@@ -34,9 +36,6 @@
 
 }
 
-
-
-
 .contenedor-typing {
   margin-bottom: 2rem;
   text-align: center;
@@ -49,12 +48,7 @@
   align-items: center;
 }
 
-
-.animation-border {
-  margin-top: 40px;
-  position: relative;
-}
-
+/*animacion-------------------------------------------------------------------------------------------------------*/
 .animation {
   margin: auto;
   top: 0;
@@ -69,6 +63,11 @@
   animation: infinite;
   animation-name: line;
   animation-duration: 10s;
+}
+
+.animation-border {
+  margin-top: 40px;
+  position: relative;
 }
 
 @keyframes line {
@@ -103,9 +102,7 @@
   }
 }
 
-
-
-
+/*BarraNavegacion-------------------------------------------------------------------------------------------------------*/
 .nav__menu-bar {
   display: flex;
   flex-direction: column;
@@ -219,13 +216,7 @@
   }
 }
 
-
-
-
-
-
-
-/*Texto Jobs*/
+/*Texto Jobs-------------------------------------------------------------------------------------------------------*/
 .contenedor-text-jobs {
   justify-content: center;
   align-items: center;
@@ -240,10 +231,7 @@
   }
 }
 
-
-
-
-/*skills*/
+/*skills-------------------------------------------------------------------------------------------------------*/
 .container-bar {
   width: 100%;
   background: #fff;
@@ -369,11 +357,9 @@
   color: #3DF6BF;
 }
 
-
 .texto-indigo {
   color: rgba(93, 48, 255);
 }
-
 
 .contenedor-skill {
   margin-inline: 15px;
@@ -383,9 +369,7 @@
   display: flex;
 }
 
-
-/*Portafolio*/
-
+/*Portafolio-------------------------------------------------------------------------------------------------------*/
 .home .posts .post {
   display: flex;
 }
@@ -394,7 +378,6 @@
   .home .posts .post {
     display: grid;
   }
-
 }
 
 .home .posts .post:nth-child(2n + 1) {
@@ -404,8 +387,6 @@
 .gris {
   filter: grayscale(80%);
 }
-
-
 
 .contenedor-port {
   width: 100%;
@@ -482,8 +463,6 @@
   margin: auto;
 }
 
-
-
 .text-hobbies {
   font-size: 22px;
 
@@ -492,18 +471,24 @@
   }
 }
 
-
-
-
-/*Formulario*/
+/*Formulario-------------------------------------------------------------------------------------------------------*/
 .contenedor-form {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
+input:valid,
+textarea:valid {
+  border-color: #3DF6BF;
+}
 
-/*Footer*/
+input:invalid,
+textarea:invalid {
+  border-color: #f1877b;
+}
+
+/*Footer-------------------------------------------------------------------------------------------------------*/
 .content-footer {
   display: grid;
   justify-content: center;
