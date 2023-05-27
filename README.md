@@ -1,4 +1,4 @@
-Esto es un proyecto de [Next.js](https://nextjs.org/) project bootstrapped with [`[JP](https://jona-p.vercel.app/)`](JP).
+Esto es un proyecto de [Next.js](https://nextjs.org/) project bootstrapped with [JP](https://jona-p.vercel.app/)
 
 ## Getting Started
 
