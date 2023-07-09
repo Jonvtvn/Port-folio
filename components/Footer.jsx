@@ -3,10 +3,10 @@ import React from "react"
 
 function Footer() {
     return (
-        <footer className="bg-footer text-center dark:bg-neutral-800">
+        <footer className="bg-footer text-center dark:bg-neutral-800 relative">
             <div className="flex items-center justify-center border-indigo-50 p-10">
                 <div className="flex-nowrap justify-center text-gray-800 dark:text-gray-100">
-                    <p className="font-black uppercase">“No hemos sido los primeros, pero seremos los mejores.”</p>
+                    <p className="font-thin font">“No hemos sido los primeros, pero seremos los mejores.”</p>
                     <p className="font-medium bg-gradient-to-r from-indigo-500  to-pink-700 inline-block text-transparent bg-clip-text">Steve Jobs</p>
                 </div>
             </div>

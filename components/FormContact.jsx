@@ -21,14 +21,14 @@ function FormContact() {
     return (
         <section className="contenedor-form pt-28 pb-28" id="formcontacto">
             <form id="formul" className="w-full max-w-sm" ref={form} onSubmit={sendEmail} >
-                <h1 className="text-title text-center text-white  font-black" id="sobremi" >CONTACTO</h1>
+                <h1 className="text-title text-center text-white  font-bold" id="sobremi" >CONTACTO</h1>
                 <div className="animation-border justify-center content-center items-center">
                     <div className="animation rounded-lg justify-center content-center"></div>
                 </div>
                 <ContentForm />
                 <div className="flex justify-center items-center text-center">
                     <div className="justify-center items-center text-center">
-                        <button className="justify-center items-center text-center shadow bg-indigo-700 hover:bg-indigo-950 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Enviar</button>
+                        <button className="btn_cont_form justify-center items-center text-center shadow hover:bg-emerald-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
