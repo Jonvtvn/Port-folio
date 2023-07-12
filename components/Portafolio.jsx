@@ -4,6 +4,7 @@ import ContPortTask from "./components-childs/ContPortTask"
 import ContPortMT from "./components-childs/ContPortMT"
 import ContPortYHL from "./components-childs/ContPortYHL"
 import ContPortMP from "./components-childs/ContPortMP"
+import ContPortHosp from "./components-childs/ContPortHosp"
 import TextHobbies from "./TextHobbies"
 
 export default function Portafolio() {
@@ -24,11 +25,7 @@ export default function Portafolio() {
                         <ContPortYHL />
                         <ContPortMT />
                         <ContPortTask />
-                        <div class="item item-5 contenedor-port">
-                            <Link href="https://github.com/Jonvtvn/Proyect-React-Tasks">
-                                <img className="gris card__img" src="" alt="" />
-                            </Link>
-                        </div>
+                        <ContPortHosp />
                     </div>
                 </div>
                 <div className="animation-border justify-center content-center items-center pb-10">

@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import '../styles/star-bg.css'
 import BgStar from '<>/components/BgStar'
 import Theme from '<>/components/Theme'
+import Scroll from '<>/components/Scroll'
 import Footer from '<>/components/Footer'
 
 export default function RootLayout({ children }) {
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         <BgStar />
         <Theme />
+        <Scroll />
         {children}
         <Footer />
       </body>

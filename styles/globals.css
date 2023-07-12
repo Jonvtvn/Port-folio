@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.material-symbols-outlined {
+  font-size: 20px !important;
+}
+
+
+#ir_arriba_boton {
+  position: fixed;
+  z-index: 1000;
+  right: 25px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .2s;
+}
+
+#ir_arriba_boton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.log_scroll {
+  font-size: 25px;
+}
 
 
 /*ContenidoMeHome-------------------------------------------------------------------------------------------------------*/
@@ -33,7 +59,6 @@
   @media(max-width: 460px) {
     display: block;
   }
-
 }
 
 .log_red {
@@ -307,18 +332,49 @@
 
 .log_skill {
   font-size: 80px;
-  color: rgb(168, 151, 227);
+  color: rgb(255, 255, 255);
 }
 
-
-
-.container-bar {
-  width: 100%;
-  background: #fff;
-  margin: 0 15px;
-  padding: 10px 20px;
-  border-radius: 7px;
+.log_skill1:hover {
+  color: rgb(255, 87, 51);
+  transition: 0.5s;
 }
+
+.log_skill2:hover {
+  color: rgb(72, 90, 177);
+  transition: 0.5s;
+}
+
+.log_skill3:hover {
+  color: rgb(246, 203, 140);
+  transition: 0.5s;
+}
+
+.log_skill4:hover {
+  color: rgb(202, 80, 15);
+  transition: 0.5s;
+}
+
+.log_skill5:hover {
+  color: rgb(15, 133, 202);
+  transition: 0.5s;
+}
+
+.log_skill6:hover {
+  color: rgb(61, 154, 18);
+  transition: 0.5s;
+}
+
+.log_skill7:hover {
+  color: rgb(207, 72, 72);
+  transition: 0.5s;
+}
+
+.log_skill8:hover {
+  color: rgb(38, 205, 231);
+  transition: 0.5s;
+}
+
 
 .text-title {
   text-align: center;
@@ -327,127 +383,6 @@
   margin-bottom: 30px;
 }
 
-.container .skill-box {
-  width: 100%;
-  margin: 25px 0;
-}
-
-.skill-box .title {
-  color: white;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.skill-box .skill-bar {
-  height: 10px;
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 6px;
-  background: rgb(49, 46, 46);
-}
-
-.skill-box .skill-per {
-  position: relative;
-  display: block;
-  height: 100%;
-  width: 95%;
-  border-radius: 6px;
-  animation: progress 2s ease-in-out forwards;
-  opacity: 0;
-}
-
-.skill-per.html {
-  width: 95%;
-  animation-delay: 1s;
-}
-
-.skill-per.css {
-  width: 70%;
-  animation-delay: 1s;
-}
-
-.skill-per.javascript {
-  width: 45%;
-  animation-delay: 1s;
-}
-
-.skill-per.nodejs {
-  width: 40%;
-  animation-delay: 1s;
-}
-
-.skill-per.reactjs {
-  width: 60%;
-  animation-delay: 1s;
-}
-
-.skill-per.python {
-  width: 65%;
-  animation-delay: 1s;
-}
-
-.skill-per.java {
-  width: 35%;
-  animation-delay: 1s;
-}
-
-.skill-per.angular {
-  width: 30%;
-  animation-delay: 1s;
-}
-
-@keyframes progress {
-  0% {
-    width: 0;
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.skill-per .tooltip {
-  position: absolute;
-  right: -14px;
-  top: -28px;
-  font-size: 9px;
-  font-weight: 500;
-  color: #120a36;
-  padding: 2px 6px;
-  border-radius: 3px;
-  background: #3DF6BF;
-  z-index: 1;
-}
-
-.tooltip::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -2px;
-  height: 10px;
-  width: 10px;
-  z-index: -1;
-  background-color: #3DF6BF;
-  transform: translateX(-50%) rotate(45deg);
-}
-
-.color-text {
-  color: #3DF6BF;
-}
-
-.texto-indigo {
-  color: rgba(93, 48, 255);
-}
-
-.contenedor-skill {
-  margin-inline: 15px;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 /*Portafolio-------------------------------------------------------------------------------------------------------*/
 
@@ -482,14 +417,12 @@
   grid-row: 3 / 5;
 }
 
-
 .card__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 
 }
-
 
 @media screen and (max-width: 780px) {
   .wrapper {
@@ -558,10 +491,6 @@
   }
 }
 
-
-
-
-
 .contenedor-port {
   position: relative;
 }
@@ -605,84 +534,8 @@
   font-size: 40px;
 }
 
-
-
-
-
-.home .posts .post {
-  display: flex;
-}
-
-@media screen and (max-width: 780px) {
-  .home .posts .post {
-    display: grid;
-  }
-}
-
-.home .posts .post:nth-child(2n + 1) {
-  flex-direction: row-reverse;
-}
-
 .gris {
   filter: grayscale(90%);
-}
-
-
-
-.contenedor-port figure {
-  position: relative;
-  height: auto;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.contenedor-port figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 400ms ease-out;
-  will-change: transform;
-}
-
-.contenedor-port figure .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(250, 0, 148);
-  background: linear-gradient(90deg, rgba(250, 0, 148, 0.6) 0%, rgba(66, 30, 187, 0.6) 100%);
-  transition: all 400ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-}
-
-.contenedor-port figure:hover>.capa {
-  opacity: 1;
-  visibility: visible;
-}
-
-.contenedor-port figure:hover>.capa h3 {
-  margin-top: 70px;
-  margin-bottom: 15px;
-}
-
-.contenedor-port figure:hover>img {
-  transform: scale(1.3);
-}
-
-.contenedor-port figure .capa h3 {
-  margin-bottom: 120px;
-  transition: all 400ms ease-out;
-  margin-top: 30px;
-}
-
-.contenedor-port figure .capa p {
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.5;
-  width: 100%;
-  max-width: 310px;
-  margin: auto;
 }
 
 .text-hobbies {
@@ -737,30 +590,6 @@ textarea:invalid {
   font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*boton dark light*/
 .dark-hidden {
   display: block !important;
@@ -778,9 +607,8 @@ textarea:invalid {
   display: block !important;
 }
 
-
 .toggle-switch {
-  margin-left: 30px;
+  margin-left: 20px;
   position: fixed;
   bottom: 45%;
   display: flex;

@@ -2,6 +2,7 @@ import React from "react"
 import Link from 'next/link'
 import { FaAngular, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { BiLogoTypescript } from 'react-icons/bi'
+
 export default function ContPortMT() {
     return (
         <>

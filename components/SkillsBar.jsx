@@ -20,14 +20,14 @@ function SkillsBar() {
                     <div className="animation rounded-lg justify-center content-center"></div>
                 </div>
                 <div className="box_skills text-white py-16 text-center justify-center gap-6">
-                    <FaHtml5 className="log_skill" />
-                    <FaCss3Alt className="log_skill" />
-                    <FaJs className="log_skill" />
-                    <FaJava className="log_skill" />
-                    <FaPython className="log_skill" />
-                    <FaNodeJs className="log_skill" />
-                    <FaAngular className="log_skill" />
-                    <FaReact className="log_skill" />
+                    <FaHtml5 className="log_skill log_skill1" />
+                    <FaCss3Alt className="log_skill log_skill2" />
+                    <FaJs className="log_skill log_skill3" />
+                    <FaJava className="log_skill log_skill4" />
+                    <FaPython className="log_skill log_skill5" />
+                    <FaNodeJs className="log_skill log_skill6" />
+                    <FaAngular className="log_skill log_skill7" />
+                    <FaReact className="log_skill log_skill8" />
                 </div>
             </div>
         </div>
