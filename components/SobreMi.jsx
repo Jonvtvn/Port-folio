@@ -13,8 +13,8 @@ export default function SobreMi() {
       <div className="contenedor">
         <div className="sm:max-w-2xl mx-5 text-center">
           <div className="text-white dark:text-white font-medium">
-            <p className="text-justify my-2 sm:text-lg font-thin">
-              Soy ingeniero en Informática. Me apasiona la programación Web, tanto en el FrontEnd como en el BackEnd, aunque me especializo en el FrontEnd. Además, tengo conocimientos en otras tecnologías como desarrollo móvil y aplicaciones de escritorio.
+            <p className=" my-2 sm:text-lg font-thin">
+              Soy ingeniero en Informática. Me apasiona la programación Web, tanto FrontEnd como BackEnd, aunque desarrollo mas en FrontEnd. Además, tengo conocimientos en otras tecnologías como desarrollo móvil y aplicaciones de escritorio.
             </p>
             <div className="flex gap-7 text-white justify-center mt-4">
               <Link href="https://www.instagram.com/jnv.ispior._/">

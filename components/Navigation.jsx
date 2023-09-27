@@ -5,12 +5,12 @@ import '../styles/globals.css'
 
 const Navbar = () => {
   const MENU_LIST1 = [
-    { text: "< HOME />", href: "/" },
+    { text: "< INICIO />", href: "/" },
     { text: "< PORTFOLIO />", href: "#portafolio" },
   ];
   const MENU_LIST2 = [
     { text: "< CONTACTO />", href: "#formcontacto" },
-    { text: "< SKILLS />", href: "#skills" },
+    { text: "< HABILIDADES />", href: "#skills" },
   ];
 
   const [navActive, setNavActive] = useState(null);
